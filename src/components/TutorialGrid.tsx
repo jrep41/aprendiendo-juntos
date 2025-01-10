@@ -7,42 +7,42 @@ const tutorials = [
     description: "Aprende los fundamentos del lenguaje de marcado que da estructura a la web.",
     icon: Layout,
     difficulty: "Principiante",
-    path: "/tutorial/html"
+    path: "https://www.youtube.com/watch?v=MJkdaVFHrto",
   },
   {
     title: "CSS",
     description: "Domina el diseño y estilizado de páginas web con CSS moderno.",
     icon: Palette,
     difficulty: "Principiante",
-    path: "/tutorial/css"
+    path: "https://www.youtube.com/watch?v=wZniZEbPAzk",
   },
   {
     title: "JavaScript",
     description: "Añade interactividad y dinamismo a tus sitios web con JavaScript.",
     icon: Code2,
     difficulty: "Intermedio",
-    path: "/tutorial/javascript"
+    path: "https://www.youtube.com/watch?v=z95mZVUcJ-E",
   },
   {
     title: "Python",
     description: "Descubre el lenguaje más versátil para backend y ciencia de datos.",
     icon: Box,
     difficulty: "Intermedio",
-    path: "/tutorial/python"
+    path: "https://www.youtube.com/watch?v=nKPbfIU442g",
   },
   {
     title: "Frontend",
     description: "Crea interfaces de usuario modernas y responsivas.",
     icon: Globe,
     difficulty: "Avanzado",
-    path: "/tutorial/frontend"
+    path: "https://www.youtube.com/watch?v=wTpuKOhGfJE",
   },
   {
     title: "Backend",
     description: "Desarrolla la lógica y bases de datos de aplicaciones web.",
     icon: Database,
     difficulty: "Avanzado",
-    path: "/tutorial/backend"
+    path: "https://www.youtube.com/watch?v=Wn_Kb3MR_cU",
   },
 ] as const;
 
