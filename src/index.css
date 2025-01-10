@@ -15,6 +15,7 @@
     font-weight: theme('fontWeight.bold');
   }
 }
+
 .card-tutorial {
   background-color: white;
   border-radius: 0.75rem;
@@ -25,10 +26,5 @@
 }
 
 .card-tutorial:hover {
-  animation: card-hover;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
-}
-
-.gradient-bg {
-  background-image: linear-gradient(to bottom right, var(--primary), var(--primary-80));
 }
