@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <div className="gradient-bg text-white py-20 px-4 sm:px-6 lg:px-8">
+    <div className="bg-primary text-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto text-center">
         <GraduationCap className="w-16 h-16 mx-auto mb-8" />
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
