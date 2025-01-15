@@ -1,10 +1,10 @@
-import { Code2, Palette, Box, Globe, Database, Layout } from "lucide-react";
+import { Code2, Palette, Box, Globe, Database, Layout, MonitorCheck } from "lucide-react";
 import { TutorialCard } from "./TutorialCard";
 
 const tutorials = [
   {
     title: "HTML",
-    description: "Aprende HTML con este Curso COMPLETO de HTML GRATIS desde cero: SEO, semántica y más",
+    description: "Aprende HTML con MIDUDEV en su canal midulive con su Curso COMPLETO de HTML GRATIS desde cero: SEO, semántica y más",
     icon: Layout,
     difficulty: "Principiante",
     path: "https://www.youtube.com/watch?v=3nYLTiY5skU",
@@ -18,17 +18,17 @@ const tutorials = [
   },
   {
     title: "JavaScript",
-    description: "Añade interactividad y dinamismo a tus sitios web con JavaScript.",
+    description: "Añade interactividad y dinamismo a tus sitios web con JavaScript de la mano de Carlos Azaustre con su CURSO DE JAVASCRIPT COMPLETO DESDE CERO en español.",
     icon: Code2,
-    difficulty: "Intermedio",
-    path: "https://www.youtube.com/watch?v=z95mZVUcJ-E",
+    difficulty: "Principiante",
+    path: "https://www.youtube.com/watch?v=S9ojNaeC1RI",
   },
   {
     title: "Python",
-    description: "Descubre el lenguaje más versátil para backend y ciencia de datos.",
+    description: "Descubre el lenguaje más versátil para backend y ciencia de datos de la mano de Curso de PYTHON desde CERO para PRINCIPIANTES de la mano de MoureDev (Brais Moure).",
     icon: Box,
-    difficulty: "Intermedio",
-    path: "https://www.youtube.com/watch?v=nKPbfIU442g",
+    difficulty: "Principiante",
+    path: "https://www.youtube.com/watch?v=Kp4Mvapo5kc",
   },
   {
     title: "Frontend",
@@ -41,6 +41,13 @@ const tutorials = [
     title: "Backend",
     description: "Desarrolla la lógica y bases de datos de aplicaciones web.",
     icon: Database,
+    difficulty: "Avanzado",
+    path: "https://www.youtube.com/watch?v=Wn_Kb3MR_cU",
+  },
+  {
+    title: "FullStack",
+    description: "Presentación del curso y Fundamentos del Desarrollo Web - Bootcamp FullStack Gratuito de MIDUDEV",
+    icon: MonitorCheck,
     difficulty: "Avanzado",
     path: "https://www.youtube.com/watch?v=Wn_Kb3MR_cU",
   },
