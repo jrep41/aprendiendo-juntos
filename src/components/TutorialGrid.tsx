@@ -49,7 +49,7 @@ const tutorials = [
     description: "Presentación del curso y Fundamentos del Desarrollo Web - Bootcamp FullStack Gratuito de MIDUDEV",
     icon: MonitorCheck,
     difficulty: "Avanzado",
-    path: "https://www.youtube.com/watch?v=Wn_Kb3MR_cU",
+    path: "https://www.youtube.com/watch?v=wTpuKOhGfJE",
   },
 ] as const;
 
