@@ -4,17 +4,17 @@ import { TutorialCard } from "./TutorialCard";
 const tutorials = [
   {
     title: "HTML",
-    description: "Aprende los fundamentos del lenguaje de marcado que da estructura a la web.",
+    description: "Aprende HTML con este Curso COMPLETO de HTML GRATIS desde cero: SEO, semántica y más",
     icon: Layout,
     difficulty: "Principiante",
-    path: "https://www.youtube.com/watch?v=MJkdaVFHrto",
+    path: "https://www.youtube.com/watch?v=3nYLTiY5skU",
   },
   {
     title: "CSS",
-    description: "Domina el diseño y estilizado de páginas web con CSS moderno.",
+    description: "Domina CSS con el canal de ManzDev.",
     icon: Palette,
     difficulty: "Principiante",
-    path: "https://www.youtube.com/watch?v=wZniZEbPAzk",
+    path: "https://www.youtube.com/@ManzDev",
   },
   {
     title: "JavaScript",
