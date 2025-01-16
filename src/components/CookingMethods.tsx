@@ -1,11 +1,11 @@
-import { Flame, Oven, Fan, Cooking } from "lucide-react";
+import { Flame, Soup, Fan, CookingPot } from "lucide-react";
 import { CookingMethodCard } from "./CookingMethodCard";
 
 const cookingMethods = [
   {
     title: "Cocina con Olla",
     description: "Aprende las bases de la cocina mediterránea usando una olla tradicional.",
-    icon: Cooking,
+    icon: CookingPot,
     tips: [
       "Siempre precalienta la olla con un poco de aceite",
       "Controla el fuego - medio-bajo para cocción lenta",
@@ -16,7 +16,7 @@ const cookingMethods = [
   {
     title: "Horno",
     description: "Descubre cómo usar el horno para platos mediterráneos horneados.",
-    icon: Oven,
+    icon: Soup,
     tips: [
       "Precalienta siempre el horno",
       "Usa papel de hornear para evitar que se pegue",
