@@ -23,11 +23,22 @@
         />
         <!-- Añadir jQuery antes de Slick -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        
+
         <!-- Archivos Slick -->
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
 
         <link href="css/general.css" rel="stylesheet" />
         <title>Web propia de Andrea Escarpa</title>
@@ -76,13 +87,21 @@
 
             /* Navegación responsive */
             .navbar-nav {
-                justify-content: center;
-                flex-wrap: wrap;
+                display: flex;
+                flex-direction: row !important; /* Fuerza dirección horizontal */
+                justify-content: space-around;
+                width: 100%;
+                margin: 0;
+                padding: 10px;
+            }
+
+            .nav-item {
+                margin: 0 5px;
             }
 
             .nav-item img {
-                width: clamp(40px, 8vw, 60px);
-                height: clamp(40px, 8vw, 60px);
+                width: 60px;
+                height: 60px;
             }
 
             /* Media queries */
@@ -99,7 +118,12 @@
 
             @media (max-width: 576px) {
                 .navbar-nav {
-                    gap: 10px;
+                    gap: 5px;
+                }
+
+                .nav-item img {
+                    width: 40px;
+                    height: 40px;
                 }
             }
         </style>
@@ -262,8 +286,8 @@
                             breakpoint: 768,
                             settings: {
                                 centerPadding: "0",
-                            }
-                        }
+                            },
+                        },
                     ],
                     autoplaySpeed: 2000,
                     pauseOnHover: false,
@@ -274,15 +298,15 @@
         </script>
         <!-- Al final del body, antes del cierre -->
         <script type="text/javascript">
-            $(document).ready(function(){
-                $('.slider').slick({
+            $(document).ready(function () {
+                $(".slider").slick({
                     dots: true,
                     infinite: true,
                     speed: 500,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     autoplay: true,
-                    autoplaySpeed: 2000
+                    autoplaySpeed: 2000,
                 });
             });
         </script>
