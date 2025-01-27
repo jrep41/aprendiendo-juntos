@@ -21,6 +21,13 @@
             type="text/css"
             href="slick-1.8.1/slick/slick-theme.css"
         />
+        <!-- Añadir jQuery antes de Slick -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        
+        <!-- Archivos Slick -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
         <link href="css/general.css" rel="stylesheet" />
         <title>Web propia de Andrea Escarpa</title>
@@ -262,6 +269,20 @@
                     pauseOnHover: false,
                     pauseOnDotsHover: false,
                     pauseOnFocus: false,
+                });
+            });
+        </script>
+        <!-- Al final del body, antes del cierre -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000
                 });
             });
         </script>
