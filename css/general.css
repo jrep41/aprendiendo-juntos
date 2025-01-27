@@ -1,0 +1,79 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.container-fluid {
+  background-color: #483030;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: #343a40; /* Color de fondo oscuro */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5); /* Color de los enlaces */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fff; /* Color del enlace activo */
+}
+
+.navbar-dark .navbar-nav .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.25); /* Color del enlace deshabilitado */
+}
+
+/* Estilos para las imágenes de los enlaces de navegación */
+.navbar-nav .nav-link img {
+  width: 60px;
+  height: 60px;
+}
+
+.carousel {
+  z-index: 1;
+  max-width: 800px; /* Ancho máximo del carousel */
+  margin: 0 auto; /* Centrar el carousel */
+}
+
+.carousel-inner img {
+    max-width: 800px; /* Ancho máximo de las imágenes */
+    height: 500px; /* Altura fija */
+    margin: 0 auto; /* Centrar horizontalmente */
+    object-fit: cover; /* Mantener proporción de la imagen */
+}

@@ -1,0 +1,385 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- CSS Slick -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="slick-1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="slick-1.8.1/slick/slick-theme.css"
+        />
+        <!-- JS Slick -->
+        <script
+            src="https://code.jquery.com/jquery-2.2.0.min.js"
+            type="text/javascript"
+        ></script>
+        <script
+            type="text/javascript"
+            src="slick-1.8.1/slick/slick.min.js"
+        ></script>
+
+        <link href="css/general.css" rel="stylesheet" />
+
+        <title>Web propia de Andrea Escarpa</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background: linear-gradient(to right, #2c5f2d, #3a923a);
+                color: white;
+                text-align: center;
+                padding: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            .park-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                padding: 2rem 0;
+            }
+
+            .park-card {
+                background: white;
+                border-radius: 15px;
+                overflow: hidden;
+            }
+
+            .park-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .park-image {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-bottom: 4px solid #2c5f2d;
+            }
+
+            .park-info {
+                padding: 1.5rem;
+            }
+
+            .park-title {
+                color: #2c5f2d;
+                margin-bottom: 1rem;
+                font-size: 1.4rem;
+            }
+
+            .park-data {
+                list-style: none;
+                margin-bottom: 1rem;
+            }
+
+            .park-data li {
+                margin-bottom: 0.5rem;
+                display: flex;
+                align-items: center;
+                font-size: 0.9rem;
+            }
+
+            .park-data i {
+                margin-right: 0.5rem;
+                color: #3a923a;
+                width: 20px;
+            }
+
+            .highlight {
+                color: #3a923a;
+                font-weight: bold;
+                text-decoration: none;
+                display: inline-block;
+                margin-top: 1rem;
+            }
+
+            footer {
+                background: linear-gradient(to right, #2c5f2d, #3a923a);
+                color: white;
+                text-align: center;
+                padding: 2rem;
+                margin-top: 3rem;
+            }
+
+            @media (max-width: 768px) {
+                .park-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"
+                            ><img
+                                width="60"
+                                height="60"
+                                src="img/Logos/huella.png"
+                        /></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="centros.html"
+                            ><img
+                                width="60"
+                                height="60"
+                                src="img/Logos/hoja.png"
+                        /></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="catalogo.html"
+                            ><img
+                                width="60"
+                                height="60"
+                                src="img/Logos/arbol.png"
+                        /></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="busqueda.html"
+                            ><img
+                                width="60"
+                                height="60"
+                                src="img/Logos/lupa.png"
+                        /></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactos.html"
+                            ><img
+                                width="60"
+                                height="60"
+                                src="img/Logos/persona.png"
+                        /></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <h1>Centros de Recuperación de Fauna Europea</h1>
+            <p>
+                6 centros especializados en rescate y rehabilitación de vida
+                silvestre
+            </p>
+        </header>
+
+        <div class="container">
+            <div class="park-grid">
+                <!-- Centro 1 -->
+                <article class="park-card">
+                    <img src="img/grefa.png" alt="GREFA" class="park-image" />
+                    <div class="park-info">
+                        <h3 class="park-title">GREFA (España)</h3>
+                        <ul class="park-data">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>Madrid,
+                                España
+                            </li>
+                            <li>
+                                <i class="fas fa-paw"></i>Especializado en
+                                rapaces
+                            </li>
+                            <li>
+                                <i class="fas fa-heart"></i>+4,000 animales
+                                atendidos anuales
+                            </li>
+                        </ul>
+                        <a
+                            href="https://www.grefa.org"
+                            class="highlight"
+                            target="_blank"
+                            >Visitar web →</a
+                        >
+                    </div>
+                </article>
+
+                <!-- Centro 2 -->
+                <article class="park-card">
+                    <img
+                        src="img/natuur.jpg"
+                        alt="Natuurhulpcentrum"
+                        class="park-image"
+                    />
+                    <div class="park-info">
+                        <h3 class="park-title">Natuurhulpcentrum (Bélgica)</h3>
+                        <ul class="park-data">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>Opglabbeek,
+                                Bélgica
+                            </li>
+                            <li>
+                                <i class="fas fa-paw"></i>Mamíferos y aves
+                                acuáticas
+                            </li>
+                            <li>
+                                <i class="fas fa-heart"></i>Centro de referencia
+                                en Europa
+                            </li>
+                        </ul>
+                        <a
+                            href="https://www.natuurhulpcentrum.be"
+                            class="highlight"
+                            target="_blank"
+                            >Visitar web →</a
+                        >
+                    </div>
+                </article>
+
+                <!-- Centro 3 -->
+                <article class="park-card">
+                    <img
+                        src="img/le_tichodrome.png"
+                        alt="Le Tichodrome"
+                        class="park-image"
+                    />
+                    <div class="park-info">
+                        <h3 class="park-title">Le Tichodrome (Francia)</h3>
+                        <ul class="park-data">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>Ebersheim,
+                                Francia
+                            </li>
+                            <li>
+                                <i class="fas fa-paw"></i>Aves rapaces nocturnas
+                            </li>
+                            <li>
+                                <i class="fas fa-heart"></i>Programas de
+                                reintroducción
+                            </li>
+                        </ul>
+                        <a
+                            href="https://www.le-tichodrome.fr/"
+                            class="highlight"
+                            target="_blank"
+                            >Visitar web →</a
+                        >
+                    </div>
+                </article>
+
+                <!-- Centro 4 -->
+                <article class="park-card">
+                    <img
+                        src="img/wildtierstation.png"
+                        alt="Wildtierstation"
+                        class="park-image"
+                    />
+                    <div class="park-info">
+                        <h3 class="park-title">Wildtierstation (Alemania)</h3>
+                        <ul class="park-data">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>Hamburgo,
+                                Alemania
+                            </li>
+                            <li><i class="fas fa-paw"></i>Fauna forestal</li>
+                            <li>
+                                <i class="fas fa-heart"></i>Tecnología de
+                                rehabilitación
+                            </li>
+                        </ul>
+                        <a
+                            href="https://www.wildtierstation-hamburg.de"
+                            class="highlight"
+                            target="_blank"
+                            >Visitar web →</a
+                        >
+                    </div>
+                </article>
+
+                <!-- Centro 5 -->
+                <article class="park-card">
+                    <img
+                        src="img/wildlife.jpg"
+                        alt="Wildlife Aid"
+                        class="park-image"
+                    />
+                    <div class="park-info">
+                        <h3 class="park-title">Wildlife Aid (Reino Unido)</h3>
+                        <ul class="park-data">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i
+                                >Leatherhead, UK
+                            </li>
+                            <li><i class="fas fa-paw"></i>Fauna urbana</li>
+                            <li>
+                                <i class="fas fa-heart"></i>Rescates 24 horas
+                            </li>
+                        </ul>
+                        <a
+                            href="https://www.wildlifeaid.org.uk"
+                            class="highlight"
+                            target="_blank"
+                            >Visitar web →</a
+                        >
+                    </div>
+                </article>
+
+                <!-- Centro 6 -->
+                <article class="park-card">
+                    <img
+                        src="img/cras_italy.jpg"
+                        alt="CRAS Italia"
+                        class="park-image"
+                    />
+                    <div class="park-info">
+                        <h3 class="park-title">CRAS (Italia)</h3>
+                        <ul class="park-data">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>Bernezzo,
+                                Italia
+                            </li>
+                            <li><i class="fas fa-paw"></i>Fauna alpina</li>
+                            <li>
+                                <i class="fas fa-heart"></i>Investigación
+                                científica
+                            </li>
+                        </ul>
+                        <a
+                            href="https://www.facebook.com/Crasbernezzo/"
+                            class="highlight"
+                            target="_blank"
+                            >Visitar web →</a
+                        >
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                Si encuentras un animal salvaje herido, contacta con las
+                autoridades locales de protección ambiental
+            </p>
+            <p>
+                © 2024 Centros de Fauna Europea - Todos los derechos reservados
+            </p>
+        </footer>
+    </body>
+</html>
