@@ -24,12 +24,79 @@
 
         <link href="css/general.css" rel="stylesheet" />
         <title>Web propia de Andrea Escarpa</title>
+        <style>
+            /* Estilos base */
+            body {
+                background-color: rgb(147, 243, 233);
+            }
+
+            /* Estilos para el slider */
+            .slider {
+                width: 90%;
+                max-width: 1200px;
+                margin: 30px auto;
+            }
+
+            .slider img {
+                width: 100%;
+                height: auto;
+                max-height: 500px;
+                object-fit: cover;
+            }
+
+            /* Contenedor principal */
+            .container {
+                padding: 20px;
+                margin: 0 auto;
+            }
+
+            /* Encabezados responsive */
+            h1 {
+                font-size: clamp(24px, 5vw, 36px);
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: clamp(18px, 4vw, 24px);
+                margin-bottom: 15px;
+            }
+
+            h5 {
+                font-size: clamp(14px, 3vw, 18px);
+                line-height: 1.5;
+                margin-bottom: 30px;
+            }
+
+            /* Navegación responsive */
+            .navbar-nav {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .nav-item img {
+                width: clamp(40px, 8vw, 60px);
+                height: clamp(40px, 8vw, 60px);
+            }
+
+            /* Media queries */
+            @media (max-width: 768px) {
+                .slider {
+                    width: 95%;
+                    margin: 20px auto;
+                }
+
+                .container {
+                    padding: 15px;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .navbar-nav {
+                    gap: 10px;
+                }
+            }
+        </style>
     </head>
-    <style>
-        body {
-            background-color: rgb(147, 243, 233); /* Color de fondo */
-        }
-    </style>
     <body>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container-fluid">
@@ -96,7 +163,7 @@
             </h5>
         </div>
 
-        <section class="regular slider">
+        <section class=".slider">
             <div>
                 <img
                     src="img/alcatraz_atlantico.jpg"
@@ -182,7 +249,15 @@
                     slidesToScroll: 1,
                     autoplay: true,
                     centerMode: true,
-                    centerPadding: "100px",
+                    centerPadding: "0",
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                centerPadding: "0",
+                            }
+                        }
+                    ],
                     autoplaySpeed: 2000,
                     pauseOnHover: false,
                     pauseOnDotsHover: false,
