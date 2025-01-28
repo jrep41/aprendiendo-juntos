@@ -194,16 +194,31 @@
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     autoplay: true,
+                    adaptiveHeight: true,
+                    respondTo: "min",
                     centerMode: true,
-                    centerPadding: "0",
+                    centerPadding: "500px",
                     responsive: [
                         {
-                            breakpoint: 768,
+                            breakpoint: 1024,
                             settings: {
-                                centerPadding: "0",
+                                slidesToShow: 3,
+                                infinite: true,
                             },
                         },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                slidesToShow: 2,
+                                dots: true,
+                            },
+                        },
+                        {
+                            breakpoint: 300,
+                            settings: "unslick", // destroys slick
+                        },
                     ],
+
                     autoplaySpeed: 2000,
                     pauseOnHover: false,
                     pauseOnDotsHover: false,
