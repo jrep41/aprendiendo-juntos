@@ -1,25 +1,69 @@
-html, body {
-  margin: 0;
-  padding: 0;
-}
+/**
+ * Reset básico
+ *
+ * @format
+ */
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* Elementos base */
+header {
+    background: linear-gradient(to right, #2c5f2d, #3a923a);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Contenedores */
+.container {
+    padding: 20px;
+    width: 100%;
+}
+
+.container-fluid {
+    background-color: #483030;
+}
+
+/* Navegación */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row !important;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+.nav-item {
+    margin: 0 5px;
+}
+
+.nav-item img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Slider */
 .slider {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .slick-slide {
-  margin: 0px 20px;
+    margin: 0px 20px;
+    transition: all ease-in-out 0.3s;
+    opacity: 0.2;
 }
 
-.slick-slide img {
-  width: 100%;
-}
-
+.slick-slide img,
 .slider img {
     width: 100%;
     height: auto;
@@ -28,58 +72,53 @@ html, body {
 
 .slick-prev:before,
 .slick-next:before {
-  color: black;
-}
-
-.slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .2;
+    color: black;
 }
 
 .slick-active {
-  opacity: .5;
+    opacity: 0.5;
 }
 
 .slick-current {
-  opacity: 1;
+    opacity: 1;
 }
 
-.container-fluid {
-  background-color: #483030;
+/* Enlaces y alertas */
+.social-link {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Estilos para la barra de navegación */
-.navbar {
-  background-color: #343a40; /* Color de fondo oscuro */
+.social-link:hover {
+    color: #0d6efd;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5); /* Color de los enlaces */
+.success-alert {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
-.navbar-dark .navbar-nav .nav-link.active {
-  color: #fff; /* Color del enlace activo */
+/* Media queries */
+@media (max-width: 768px) {
+    .slider {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .container {
+        padding: 15px;
+    }
 }
 
-.navbar-dark .navbar-nav .nav-link.disabled {
-  color: rgba(255, 255, 255, 0.25); /* Color del enlace deshabilitado */
-}
+@media (max-width: 576px) {
+    .navbar-nav {
+        gap: 5px;
+    }
 
-/* Estilos para las imágenes de los enlaces de navegación */
-.navbar-nav .nav-link img {
-  width: 60px;
-  height: 60px;
-}
-
-.carousel {
-  z-index: 1;
-  max-width: 800px; /* Ancho máximo del carousel */
-  margin: 0 auto; /* Centrar el carousel */
-}
-
-.carousel-inner img {
-    max-width: 800px; /* Ancho máximo de las imágenes */
-    height: 500px; /* Altura fija */
-    margin: 0 auto; /* Centrar horizontalmente */
-    object-fit: cover; /* Mantener proporción de la imagen */
+    .nav-item img {
+        width: 40px;
+        height: 40px;
+    }
 }
