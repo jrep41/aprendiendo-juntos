@@ -208,12 +208,13 @@
             // JavaScript crítico
             document.addEventListener("DOMContentLoaded", function () {
                 $(".slider").slick({
+                    centerMode: true,
                     dots: true,
                     infinite: true,
                     speed: 500,
-                    slidesToShow: 1,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
-                    centerPadding: "200px",
+                    // centerPadding: "250px",
                     autoplay: true,
                     autoplaySpeed: 2000,
                 });
