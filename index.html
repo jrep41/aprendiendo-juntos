@@ -214,7 +214,6 @@
                     speed: 500,
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    // centerPadding: "250px",
                     autoplay: true,
                     autoplaySpeed: 2000,
                 });
@@ -223,6 +222,20 @@
                 $(window).on("load", function () {
                     $(".slider img").fadeIn();
                 });
+
+                // Ejemplo de solicitud Axios con manejo de errores
+                axios
+                    .get("/some-endpoint")
+                    .then(function (response) {
+                        console.log(response.data);
+                    })
+                    .catch(function (error) {
+                        if (error.response && error.response.status === 404) {
+                            console.error("Error 404: Recurso no encontrado");
+                        } else {
+                            console.error("Error:", error.message);
+                        }
+                    });
             });
         </script>
         <script
@@ -237,6 +250,10 @@
         <script
             type="text/javascript"
             src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+            defer
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
             defer
         ></script>
     </body>
