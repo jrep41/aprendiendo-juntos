@@ -112,69 +112,72 @@
         <section class="slider">
             <div>
                 <img
-                    src="img/alcatraz_atlantico.jpg"
+                    src="img/alcatraz_atlantico.webp"
                     alt="Alcatraz Atlántico"
                 />
             </div>
             <div>
-                <img src="img/ardilla_roja.jpg" alt="Ardilla Roja" />
+                <img src="img/ardilla_roja.webp" alt="Ardilla Roja" />
             </div>
             <div>
-                <img src="img/Caballos.jpg" alt="Caballos" />
+                <img src="img/Caballos.webp" alt="Caballos" />
             </div>
             <div>
-                <img src="img/corzo.jpg" alt="Corzo" />
+                <img src="img/corzo.webp" alt="Corzo" />
             </div>
             <div>
-                <img src="img/foca.jpg" alt="Foca" />
+                <img src="img/foca.webp" alt="Foca" />
             </div>
             <div>
-                <img src="img/gabiota.jpg" alt="Gaviota" />
+                <img src="img/gabiota.webp" alt="Gaviota" />
             </div>
             <div>
-                <img src="img/gepardo2.jpg" alt="Gepardo" />
+                <img src="img/gepardo2.webp" alt="Gepardo" />
             </div>
             <div>
                 <img
-                    src="img/lemur_cola_anillada.jpg"
+                    src="img/lemur_cola_anillada.webp"
                     alt="Lémur cola anillada"
                 />
             </div>
             <div>
                 <img
-                    src="img/leopardo_de_las_nieves.jpg"
+                    src="img/leopardo_de_las_nieves.webp"
                     alt="Leopardo de las nieves"
                 />
             </div>
             <div>
-                <img src="img/medusa_canon_azul2.jpg" alt="Medusa Cañón Azul" />
+                <img
+                    src="img/medusa_canon_azul2.webp"
+                    alt="Medusa Cañón Azul"
+                />
             </div>
             <div>
-                <img src="img/oveja.jpg" alt="Oveja" />
+                <img src="img/oveja.webp" alt="Oveja" />
             </div>
             <div>
-                <img src="img/rinoceronte.jpg" alt="Rinoceronte" />
+                <img src="img/rinoceronte.webp" alt="Rinoceronte" />
             </div>
             <div>
-                <img src="img/tigre.jpg" alt="Tigre" />
+                <img src="img/tigre.webp" alt="Tigre" />
             </div>
             <div>
-                <img src="img/tortuga_marina.jpg" alt="Tortuga Marina" />
+                <img src="img/tortuga_marina.webp" alt="Tortuga Marina" />
             </div>
             <div>
-                <img src="img/vuitre_avierto.jpg" alt="Vuitre Avierto" />
+                <img src="img/vuitre_avierto.webp" alt="Vuitre Avierto" />
             </div>
             <div>
-                <img src="img/vulture.jpg" alt="Vulture" />
+                <img src="img/vulture.webp" alt="Vulture" />
             </div>
             <div>
-                <img src="img/zebra.jpg" alt="Zebra" />
+                <img src="img/zebra.webp" alt="Zebra" />
             </div>
             <div>
-                <img src="img/zopilote_real2.jpg" alt="Zopilote Real" />
+                <img src="img/zopilote_real2.webp" alt="Zopilote Real" />
             </div>
             <div>
-                <img src="img/zorro.jpg" alt="Zorro" />
+                <img src="img/zorro.webp" alt="Zorro" />
             </div>
         </section>
         <!-- JS Slick -->
@@ -186,7 +189,7 @@
             type="text/javascript"
             src="slick-1.8.1/slick/slick.min.js"
         ></script>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             $(document).on("ready", function () {
                 $(".regular").slick({
                     dots: true,
@@ -197,36 +200,35 @@
                     adaptiveHeight: true,
                     respondTo: "min",
                     centerMode: true,
-                    centerPadding: "500px",
+                    centerPadding: "100px", // Reducido de 500px a 100px
                     responsive: [
                         {
                             breakpoint: 1024,
                             settings: {
-                                slidesToShow: 3,
-                                infinite: true,
+                                slidesToShow: 1,
+                                centerPadding: "50px",
                             },
                         },
                         {
                             breakpoint: 600,
                             settings: {
-                                slidesToShow: 2,
+                                slidesToShow: 1,
+                                centerPadding: "20px",
                                 dots: true,
                             },
                         },
                         {
                             breakpoint: 300,
-                            settings: "unslick", // destroys slick
+                            settings: "unslick",
                         },
                     ],
-
                     autoplaySpeed: 2000,
                     pauseOnHover: false,
                     pauseOnDotsHover: false,
                     pauseOnFocus: false,
                 });
             });
-        </script>
-        <!-- Al final del body, antes del cierre -->
+        </script> -->
         <script type="text/javascript">
             $(document).ready(function () {
                 $(".slider").slick({
@@ -235,6 +237,7 @@
                     speed: 500,
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    centerPadding: "200px",
                     autoplay: true,
                     autoplaySpeed: 2000,
                 });
