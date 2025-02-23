@@ -4,6 +4,7 @@
  * @format
  */
 
+/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,7 +22,9 @@ header {
 
 /* Contenedores */
 .container {
-    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     width: 100%;
 }
 
@@ -100,49 +103,7 @@ header {
     transition: opacity 0.5s ease;
 }
 
-/* Media queries */
-@media (max-width: 768px) {
-    .slider {
-        width: 95%;
-        margin: 20px auto;
-    }
-
-    .container {
-        padding: 15px;
-    }
-}
-
-@media (max-width: 576px) {
-    .navbar-nav {
-        gap: 5px;
-    }
-
-    .nav-item img {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: linear-gradient(to right, #2c5f2d, #3a923a);
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    margin-bottom: 2rem;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
+/* Componentes de parques */
 .park-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -151,7 +112,7 @@ header {
 }
 
 .park-card {
-    background: white;
+    background: lightgray;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -193,26 +154,37 @@ header {
     font-weight: bold;
 }
 
+/* Media queries */
 @media (max-width: 768px) {
+    .slider {
+        width: 95%;
+        margin: 20px auto;
+    }
     .park-grid {
         grid-template-columns: 1fr;
     }
 }
-/* Navegación responsive */
-.navbar-nav {
-    display: flex;
-    flex-direction: row !important; /* Fuerza dirección horizontal */
-    /* justify-content: space-around; */
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        gap: 5px;
+    }
+    .nav-item img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
     width: 100%;
-    margin: 0;
-    padding: 10px;
 }
 
-.nav-item {
-    margin: 0 5px;
-}
-
-.nav-item img {
-    width: 60px;
-    height: 60px;
+footer h2 {
+    margin-bottom: 15px;
 }
