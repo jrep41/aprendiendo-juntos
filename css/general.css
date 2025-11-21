@@ -58,22 +58,6 @@ header {
 .slider {
     width: 80%;
     margin: 0 auto;
-    /* Pre-initialization state to prevent CLS */
-    display: flex;
-    gap: 20px;
-    overflow: hidden;
-    min-height: 300px; /* Reserve space */
-}
-
-.slider:not(.slick-initialized) > div {
-    flex: 0 0 33.333%; /* Show 3 items by default matching slidesToShow: 3 */
-    padding: 0 10px;
-}
-
-.slider:not(.slick-initialized) img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 
 .slider.slick-initialized {
