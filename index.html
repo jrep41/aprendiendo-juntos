@@ -2,244 +2,205 @@
 
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
-        <link rel="preconnect" href="https://code.jquery.com" />
-        <link rel="dns-prefetch" href="https://code.jquery.com" />
-        <style>
-            /* CSS crítico */
-            .slider img {
-                display: none;
-                max-width: 100%;
-                height: auto;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://code.jquery.com" />
+    <link rel="dns-prefetch" href="https://code.jquery.com" />
+    <style>
+      /* CSS crítico */
+      .navbar {
+        background-color: #343a40;
+        padding: 1rem;
+      }
+      .container {
+        margin: 0 auto;
+        padding: 20px;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="slick-1.8.1/slick/slick.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="slick-1.8.1/slick/slick-theme.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      href="css/general.css"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <!-- Añadir jQuery antes de Slick -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Web propia de Andrea Escarpa</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"
+              ><img width="60" height="60" src="img/Logos/huella.png"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="centros.html"
+              ><img width="60" height="60" src="img/Logos/hoja.png"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="catalogo.html"
+              ><img width="60" height="60" src="img/Logos/arbol.png"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="busqueda.html"
+              ><img width="60" height="60" src="img/Logos/lupa.png"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contactos.html"
+              ><img width="60" height="60" src="img/Logos/persona.png"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container text-center">
+      <h1>Fauna Salvaje</h1>
+    </div>
+    <div class="container text-center">
+      <h3>¿Quiénes somos?</h3>
+    </div>
+    <div class="container text-center">
+      <h5>
+        Descubre la fauna salvaje europea de manera realista y educativa.
+        También podrás descubrir centros donde poder ver tus animales favoritos.
+      </h5>
+    </div>
+
+    <section class="slider">
+      <div>
+        <img src="img/alcatraz_atlantico.webp" alt="Alcatraz Atlántico" />
+      </div>
+      <div>
+        <img src="img/ardilla_roja.webp" alt="Ardilla Roja" />
+      </div>
+      <div>
+        <img src="img/Caballos.webp" alt="Caballos" />
+      </div>
+      <div>
+        <img src="img/corzo.webp" alt="Corzo" />
+      </div>
+      <div>
+        <img src="img/foca.webp" alt="Foca" />
+      </div>
+      <div>
+        <img src="img/gabiota.webp" alt="Gaviota" />
+      </div>
+      <div>
+        <img src="img/gepardo2.webp" alt="Gepardo" />
+      </div>
+      <div>
+        <img src="img/lemur_cola_anillada.webp" alt="Lémur cola anillada" />
+      </div>
+      <div>
+        <img
+          src="img/leopardo_de_las_nieves.webp"
+          alt="Leopardo de las nieves"
+        />
+      </div>
+      <div>
+        <img src="img/medusa_canon_azul2.webp" alt="Medusa Cañón Azul" />
+      </div>
+      <div>
+        <img src="img/oveja.webp" alt="Oveja" />
+      </div>
+      <div>
+        <img src="img/rinoceronte.webp" alt="Rinoceronte" />
+      </div>
+      <div>
+        <img src="img/tigre.webp" alt="Tigre" />
+      </div>
+      <div>
+        <img src="img/tortuga_marina.webp" alt="Tortuga Marina" />
+      </div>
+      <div>
+        <img src="img/vuitre_avierto.webp" alt="Vuitre Avierto" />
+      </div>
+      <div>
+        <img src="img/vulture.webp" alt="Vulture" />
+      </div>
+      <div>
+        <img src="img/zebra.webp" alt="Zebra" />
+      </div>
+      <div>
+        <img src="img/zopilote_real2.webp" alt="Zopilote Real" />
+      </div>
+      <div>
+        <img src="img/zorro.webp" alt="Zorro" />
+      </div>
+    </section>
+    <script>
+      // JavaScript crítico
+      document.addEventListener("DOMContentLoaded", function () {
+        $(".slider").slick({
+          autoplay: true,
+          centerMode: true,
+          dots: true,
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          speed: 500,
+          autoplaySpeed: 2000,
+        });
+
+        // Ejemplo de solicitud Axios con manejo de errores
+        axios
+          .get("/some-endpoint")
+          .then(function (response) {
+            console.log(response.data);
+          })
+          .catch(function (error) {
+            if (error.response && error.response.status === 404) {
+              console.error("Error 404: Recurso no encontrado");
+            } else {
+              console.error("Error:", error.message);
             }
-            .navbar {
-                background-color: #343a40;
-                padding: 1rem;
-            }
-            .container {
-                margin: 0 auto;
-                padding: 20px;
-            }
-        </style>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            media="print"
-            onload="this.media='all'"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="slick-1.8.1/slick/slick.css"
-            media="print"
-            onload="this.media='all'"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="slick-1.8.1/slick/slick-theme.css"
-            media="print"
-            onload="this.media='all'"
-        />
-        <link
-            href="css/general.css"
-            rel="stylesheet"
-            media="print"
-            onload="this.media='all'"
-        />
-        <!-- Añadir jQuery antes de Slick -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <title>Web propia de Andrea Escarpa</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html"
-                            ><img
-                                width="60"
-                                height="60"
-                                src="img/Logos/huella.png"
-                        /></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="centros.html"
-                            ><img
-                                width="60"
-                                height="60"
-                                src="img/Logos/hoja.png"
-                        /></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="catalogo.html"
-                            ><img
-                                width="60"
-                                height="60"
-                                src="img/Logos/arbol.png"
-                        /></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="busqueda.html"
-                            ><img
-                                width="60"
-                                height="60"
-                                src="img/Logos/lupa.png"
-                        /></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contactos.html"
-                            ><img
-                                width="60"
-                                height="60"
-                                src="img/Logos/persona.png"
-                        /></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+          });
+      });
+    </script>
 
-        <div class="container text-center">
-            <h1>Fauna Salvaje</h1>
-        </div>
-        <div class="container text-center">
-            <h3>¿Quiénes somos?</h3>
-        </div>
-        <div class="container text-center">
-            <h5>
-                Descubre la fauna salvaje europea de manera realista y
-                educativa. También podrás descubrir centros donde poder ver tus
-                animales favoritos.
-            </h5>
-        </div>
-
-        <section class="slider">
-            <div>
-                <img
-                    src="img/alcatraz_atlantico.webp"
-                    alt="Alcatraz Atlántico"
-                />
-            </div>
-            <div>
-                <img src="img/ardilla_roja.webp" alt="Ardilla Roja" />
-            </div>
-            <div>
-                <img src="img/Caballos.webp" alt="Caballos" />
-            </div>
-            <div>
-                <img src="img/corzo.webp" alt="Corzo" />
-            </div>
-            <div>
-                <img src="img/foca.webp" alt="Foca" />
-            </div>
-            <div>
-                <img src="img/gabiota.webp" alt="Gaviota" />
-            </div>
-            <div>
-                <img src="img/gepardo2.webp" alt="Gepardo" />
-            </div>
-            <div>
-                <img
-                    src="img/lemur_cola_anillada.webp"
-                    alt="Lémur cola anillada"
-                />
-            </div>
-            <div>
-                <img
-                    src="img/leopardo_de_las_nieves.webp"
-                    alt="Leopardo de las nieves"
-                />
-            </div>
-            <div>
-                <img
-                    src="img/medusa_canon_azul2.webp"
-                    alt="Medusa Cañón Azul"
-                />
-            </div>
-            <div>
-                <img src="img/oveja.webp" alt="Oveja" />
-            </div>
-            <div>
-                <img src="img/rinoceronte.webp" alt="Rinoceronte" />
-            </div>
-            <div>
-                <img src="img/tigre.webp" alt="Tigre" />
-            </div>
-            <div>
-                <img src="img/tortuga_marina.webp" alt="Tortuga Marina" />
-            </div>
-            <div>
-                <img src="img/vuitre_avierto.webp" alt="Vuitre Avierto" />
-            </div>
-            <div>
-                <img src="img/vulture.webp" alt="Vulture" />
-            </div>
-            <div>
-                <img src="img/zebra.webp" alt="Zebra" />
-            </div>
-            <div>
-                <img src="img/zopilote_real2.webp" alt="Zopilote Real" />
-            </div>
-            <div>
-                <img src="img/zorro.webp" alt="Zorro" />
-            </div>
-        </section>
-        <script>
-            // JavaScript crítico
-            document.addEventListener("DOMContentLoaded", function () {
-                $(".slider").slick({
-                    autoplay: true,
-                    centerMode: true,
-                    dots: true,
-                    infinite: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    speed: 500,
-                    autoplaySpeed: 2000,
-                });
-
-                // Mostrar imágenes después de que todos los recursos críticos hayan cargado
-                $(window).on("load", function () {
-                    $(".slider img").fadeIn();
-                });
-
-                // Ejemplo de solicitud Axios con manejo de errores
-                axios
-                    .get("/some-endpoint")
-                    .then(function (response) {
-                        console.log(response.data);
-                    })
-                    .catch(function (error) {
-                        if (error.response && error.response.status === 404) {
-                            console.error("Error 404: Recurso no encontrado");
-                        } else {
-                            console.error("Error:", error.message);
-                        }
-                    });
-            });
-        </script>
-        <script
-            src="https://code.jquery.com/jquery-2.2.0.min.js"
-            type="text/javascript"
-            defer
-        ></script>
-        <script
-            type="text/javascript"
-            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-            defer
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
-            defer
-        ></script>
-        <footer class="bg-dark text-white text-center py-3">
-            <div class="container">
-                <a class="text-white" href="sitemap.html">Mapa del Sitio</a>
-            </div>
-        </footer>
-    </body>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+      defer
+    ></script>
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <a class="text-white" href="sitemap.html">Mapa del Sitio</a>
+      </div>
+    </footer>
+  </body>
 </html>
