@@ -4,27 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web propia de Andrea Escarpa</title>
 
-  <link rel="dns-prefetch" href="https://code.jquery.com" />
-
-  <!-- CSS crítico -->
-  <style>
-    .slider img {
-      display: none;
-      max-width: 100%;
-      height: auto;
-    }
-
-    .navbar {
-      background-color: #343a40;
-      padding: 1rem;
-    }
-
-    .container {
-      margin: 0 auto;
-      padding: 20px;
-    }
+  .container {
+  margin: 0 auto;
+  padding: 20px;
+  }
   </style>
 
   <!-- Bootstrap -->
@@ -42,6 +26,7 @@
   <!-- jQuery (required for Slick) -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -133,26 +118,50 @@
     document.addEventListener("DOMContentLoaded", function () {
       $(".slider").slick({
         autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 500,
         centerMode: true,
-        dots: true,
-        infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        speed: 500,
-        autoplaySpeed: 2000
+        arrows: true,
+        dots: true,
+        infinite: true
       });
 
       // Mostrar imágenes después de que todos los recursos críticos hayan cargado
       $(window).on("load", function () {
-        $(".slider img").fadeIn();
+        let minHeight = Infinity;
+        // Obtenemos el ancho de una diapositiva (slick ya ha inicializado)
+        let slideWidth = $(".slick-slide").not(".slick-cloned").first().width();
+
+        // Calculamos la altura proyectada de cada imagen y encontramos la mínima
+        $(".slider img").each(function () {
+          // Usamos las dimensiones naturales para calcular la altura que tendría con el ancho actual
+          let h = (this.naturalHeight / this.naturalWidth) * slideWidth;
+          if (h < minHeight) {
+            minHeight = h;
+          }
+        });
+
+        // Aplicamos la altura mínima y object-fit
+        $(".slider img").css({
+          "height": minHeight + "px",
+          "object-fit": "cover"
+        });
+
+        $(".slider img").fadeIn(400, function () {
+          $(".slider").slick("setPosition");
+        });
       });
 
       // Ejemplo de solicitud Axios con manejo de errores
-      axios
-        .get("/some-endpoint")
-        .then(function (response) {
-          console.log(response.data);
-        })
+      if (typeof axios !== 'undefined') {
+        axios
+          .get("/some-endpoint")
+          .then(function (response) {
+            console.log(response.data);
+          })
+      }
     });
   </script>
 </body>
