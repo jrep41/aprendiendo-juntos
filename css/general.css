@@ -40,6 +40,11 @@ header {
   width: 80%;
   margin: 0 auto;
 }
+
+.slider.slick-initialized {
+    display: block; /* Reset to block for slick */
+}
+
 .slick-slide {
   margin: 0 20px;
   transition: all ease-in-out 0.3s;
